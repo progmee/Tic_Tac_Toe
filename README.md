@@ -35,6 +35,8 @@ sudo apt install libsfml-dev
 
 Compile all source files with SFML:
 
+```bash
 g++ ./scripts/game.cpp ./scripts/libs/board/board.cpp ./scripts/libs/ai/ai.cpp \
     -o ./builds/game/tic-tac-toe \
     -lsfml-graphics -lsfml-window -lsfml-system
+```
