@@ -1,0 +1,25 @@
+{
+    "version": "2.0.0",
+    "tasks" : [
+        {
+            "label": "Build C++",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "./scripts/game.cpp",
+                "./scripts/libs/board/board.cpp",
+                "./scripts/libs/ai/ai.cpp",
+                "-o",
+                "./builds/game/tic-tac-toe", // Store compilation file inside of tmp folder
+                "-lsfml-graphics",
+                "-lsfml-window",
+                "-lsfml-system"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+            
+        }
+    ]
+}
