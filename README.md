@@ -1,7 +1,5 @@
 # Tic-Tac-Toe SFML
 
-![C++](https://img.shields.io/badge/C%2B%2B-17-blue) ![SFML](https://img.shields.io/badge/SFML-2.5-orange)
-
 A **classic Tic-Tac-Toe game** implemented in **C++** using **SFML** for graphics.  
 The project separates **game logic** (Board, AI) from **user interface**, allowing smooth integration of **console and graphical gameplay**.
 
