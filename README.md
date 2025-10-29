@@ -19,9 +19,6 @@ The project separates **game logic** (Board, AI) from **user interface**, allowi
 
 ## Requirements
 
-- **C++17 or later**  
-- **SFML** (Simple and Fast Multimedia Library)  
-
 Install SFML on Ubuntu:
 
 ```bash
