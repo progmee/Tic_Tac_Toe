@@ -1,25 +1,31 @@
-# Tic-Tac-Toe SFML
+# Tic-Tac-Toe (C++ / SFML)
 
-A **classic Tic-Tac-Toe game** implemented in **C++** using **SFML** for graphics.  
-The project separates **game logic** (Board, AI) from **user interface**, allowing smooth integration of **console and graphical gameplay**.
-
----
+A clean implementation of the classic Tic-Tac-Toe game built in C++. The core design principle of this project is a strict separation between **game logic** and **user interface**, allowing the game to run seamlessly in either a traditional console mode or a graphical SFML mode.
 
 ## Features
 
-- 3x3 Tic-Tac-Toe gameplay  
-- Play against a simple AI that can **block** and **win**  
-- Console and SFML graphical modes  
-- Clean separation of **logic** and **frontend**  
-- Handles **mouse clicks** and **window events** via SFML  
+* **Decoupled Architecture:** Core game rules and state management are fully separated from the rendering layer.
+* **Dual Interface Modes:** 
+  * **Graphical Mode:** Built using **SFML** (Simple and Fast Multimedia Library) for a clean visual experience.
+  * **Console Mode:** Play directly inside your terminal using text-based input/output.
+* **Modern C++:** Written with clean structure and modular organization.
 
----
+## Project Structure
 
-## Requirements
+* `game.cpp` — Core game logic, state machine, and rules validation.
+* `console.cpp` — CLI interface implementation.
+* `assets/` — Visual assets and resources for the SFML mode.
+* `libs/` — External libraries and dependencies.
+* `.vscode/` — Workspace and editor configurations.
 
-Install SFML on Ubuntu:
+## Getting Started
+
+### Prerequisites
+* A C++ compiler supporting C++11 or higher.
+* SFML library installed locally (for graphical mode).
+
+### Building and Running
+Clone the repository and compile the source files along with the SFML flags:
 
 ```bash
-sudo apt update
-sudo apt install libsfml-dev
-```
+g++ game.cpp console.cpp -o tic_tac_toe -lsfml-graphics -lsfml-window -lsfml-system
